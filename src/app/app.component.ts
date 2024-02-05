@@ -11,5 +11,7 @@ import { NavComponent } from "./nav/nav.component";
     imports: [RouterOutlet, MatCardModule, NavComponent]
 })
 export class AppComponent {
+
   title = 'robinruis-portfolio';
+  
 }
