@@ -25,16 +25,24 @@
     text-decoration: none;
     font-size: 17px;
   }
+
+
   
   /* Add an active class to highlight the current page */
-  .topnav a.active {
+  .topnav a.cv {
     color: #000;
     border: #000 3px solid;
     border-radius: 25px;
+    transition: all .5s ease;
   }
   
-  .topnav a.active:hover {
-    background-color: #ececec;
+  .topnav a.cv:hover {
+    background-color: #e3e3fc;
+    border: #f0f0f0 3px solid;
+  }
+
+  .topnav a.link.active  {
+    border-bottom: solid 1px #000;
   }
 
   /* Hide the link that should open and close the topnav on small screens */
@@ -65,6 +73,7 @@
       display: block;
       text-align: left;
       color: #000000;
+      width: 100px;
     }
     .topnav.responsive a.link.first {
       margin-top: 45px;

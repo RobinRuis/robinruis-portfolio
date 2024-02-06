@@ -12,7 +12,7 @@ export class NavComponent {
 
 
 
-  myFunction(): void {
+  openMenu(): void {
     const x = document.getElementById("myTopnav");
     if (x?.className === "topnav") {
       x.className += " responsive";
@@ -20,6 +20,13 @@ export class NavComponent {
       if (x){
         x.className = "topnav";
       }
+    }
+  }
+
+  closeMenu(): void {
+    const x = document.getElementById("myTopnav");
+    if (x?.className === "topnav responsive") {
+      x.className = "topnav";
     }
   }
 }
